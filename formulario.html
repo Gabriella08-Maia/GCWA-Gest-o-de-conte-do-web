@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    <style>
+        .fundo {
+            background-image: linear-gradient(to bottom, #f3d4ab, #f8f6d8);
+            background-repeat: no-repeat;
+            /* Impede a repetição */
+            background-size: cover;
+            /* Faz o gradiente cobrir todo o elemento */
+            height: 100vh;
+        }
+        .form{
+            padding-top: 50px;
+        }
+
+        .envio{
+            padding: 50px;
+        }
+        .logo-img {
+  height: 60px;       /* ajusta o tamanho */
+  margin-top: 2px;    /* centraliza melhor */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+
+    </style>
+</head>
+
+<body class="fundo">
+
+  <nav>
+  
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">
+  <img src="images/logo.png" alt="Logo" class="logo-img"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sobre.html">sobre</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cards.html">Cartas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<main>
+  <div class="container">
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name" class="form" >Primeiro nome</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name" class="form" >Último nome</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password" class="form" >Senha</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email" class="form" >Email</label>
+                </div>
+            </div>
+
+            
+                
+  <button class="btn waves-effect waves-light" type="submit" name="action" >
+    <input type="submit" value="Enviar">
+  </button>
+        </form>
+    </div>
+</div>
+</main>
+
+
+
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Obrigado por visitar o site</h5>
+          <p class="grey-text text-lighten-4">mais informações</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><p>contato</p></li>
+            <li><p>Fale Conosco</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Text
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

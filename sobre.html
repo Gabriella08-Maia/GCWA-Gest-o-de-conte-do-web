@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+      <style>
+        .logo-img {
+  height: 60px;       /* ajusta o tamanho */
+  margin-top: 2px;    /* centraliza melhor */
+}
+.texto-escuro {
+  color: #190e1b;
+}
+.texto-claro {
+  color: #f9f0fa;
+}
+        </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+                <img src="images/logo.png" alt="Logo" class="logo-img"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+
+                <li><a href="cards.html">Cartas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="images/evee.jpg">
+                <div class="caption center-align">
+                    <h3 class="texto-escuro">Eevees</h3>
+                    <h5 class="texto-escuro">Conheça mais sobre o pokemon mais fofo neste site!</h5>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/espeon.jpg">
+                <div class="caption left-align">
+                    <h3 class="texto-escuro">Espeon</h3>
+                    <h5 class="texto-escuro">Espeon, o Pokémon Sol de tipo Psíquico, evolui do Eevee por amizade durante o dia. Com aparência felina, usa os finos pelos do corpo e sua joia na testa para prever movimentos inimigos e o clima, sendo extremamente leal ao treinador.</h5>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/vaporeon.jpg">
+                <div class="caption left-align">
+                    <h3 class="texto-escuro">Vaporeon</h3>
+                    <h5 class="texto-escuro">Vaporeon, a evolução de água do Eevee, é conhecida por sua estrutura celular similar à água, permitindo que se liquefaça e fique invisível para caçar ou se esconder. Adaptado à vida aquática com guelras e barbatanas, este Pokémon calmo vive perto de lagos e seu design é inspirado em sereias e golfinhos.</h5>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/glaceon.jpg">
+                <div class="caption right-align">
+                    <h3 class="texto-escuro">Glaceon</h3>
+                    <h5 class="texto-escuro">Glaceon, a evolução de gelo do Eevee introduzida na Geração IV (Sinnoh), é conhecida por controlar sua temperatura corporal a -60°C para congelar a umidade do ar, criando cristais de gelo.</h5>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/jolteon.jpg">
+                <div class="caption center-align">
+                    <h3 class="texto-escuro">Jolteon</h3>
+                    <h5 class="texto-escuro">Jolteon é conhecido por sua velocidade extrema (semelhante a uma chita) e personalidade sensível que muda de humor rapidamente, causando picos de energia. Seus pelos são agulhas afiadas que disparam cargas de 10 mil volts, e ele brilha em verde na forma Shiny. </h5>
+                </div>
+            </li>
+
+             <li>
+                <img src="images/leafeon.png">
+                <div class="caption center-align">
+                    <h3 class="texto-escuro">Leafeon</h3>
+                    <h5 class="texto-escuro">Leafeon, a evolução do tipo Grama do Eevee (introduzida na Gen IV), realiza fotossíntese para produzir ar limpo, permitindo-lhe viver pacificamente em florestas. Ele afia sua cauda como uma lâmina afiada capaz de cortar grandes árvores. </h5>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/flareon.jpg">
+                <div class="caption center-align">
+                    <h3 class="texto-escuro">Flareon</h3>
+                    <h5 class="texto-escuro">Flareon, a evolução tipo Fogo do Eevee (#136), é conhecido como o Pokémon Chama, com temperatura corporal que pode atingir 900°C e chamas internas superiores a 1700°C.</h5>
+                </div>
+            </li>
+
+            <li>
+                <img src="images/umbreon.jpg">
+                <div class="caption center-align">
+                    <h3 class="texto-claro">Umbreon</h3>
+                    <h5 class="texto-claro">Umbreon é um Pokémon do tipo Sombrio introduzido na 2ª Geração, evoluindo do Eevee com alta amizade à noite. Conhecido como "Pokémon Luar", seus anéis amarelos brilham com energia misteriosa, e ele é famoso por ser um "tank" defensivo.</h5>
+                </div>
+            </li>
+
+
+
+        </ul>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            M.Slider.init(elems, {
+                indicators: true,
+                height: 400,
+                interval: 3000
+            });
+        });
+    </script>
+
+</body>
+
+</html>
